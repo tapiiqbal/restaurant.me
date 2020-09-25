@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant.me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&family=Righteous&family=Roboto:ital,wght@1,300&family=Sarina&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div id="modal"></div>
+    <header class="header">
+        <div class="logo">
+            <img tabindex="0" src="./assets/images/logo/logo-resto-white.png" alt="logo-restaurant">
+        </div>
+        <a tabindex="0" id="menu" class="header__menu">☰</a>
+
+        <nav id="drawer" class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html">Home</a></li>
+                <li class="nav__item"><a href="#favorite">Favorite</a></li>
+                <li class="nav__item"><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div tabindex="0" class="page-header">
+        <div class="page-header-text">
+            <h1 tabindex="0">Are You Hungry ?</h1>
+            <p tabindex="0" class="large">Don't Wait !</p>
+            <p tabindex="0" class="text-color">Let's start to order food now</p>
+            <a class="btn-checkout" href="#ourmenu">
+                Check Out Menu
+            </a>
+        </div>
+    </div>
+    <main>
+        <div id="ourmenu">
+            <h1 tabindex="0" class="label-menu">OUR MENU</h1>
+        </div>
+        <div class="search-container text-center">
+            <input type="text" id="search-item" placeholder="Search.." name="search">
+            <button type="submit" id="btn-search" aria-label="button search"><i class="fa fa-search"></i></button>
+            <div id="text-enter"></div>
+        </div>
+        <div id="not-found"></div>
+        <section>
+            <div id="body-content">
+            </div>
+        </section>
+        <section>
+            <div id="about">
+                <h1>About Us</h1>
+                <br/>
+                <img class="img-center" src="./assets/images/me.png" alt="me">
+                <h4 class="text-center">Email: iqbalmuhammad9321@gmail.com</h4>
+                <h4 class="text-center">Phone Number: +62 85695296846</h4>
+                <div class="text-center">
+                    <a href="https://wa.me/+6285695296846" target="blank_"><i class="fa fa-whatsapp small"></i></a>
+                    <a href="https://linkedin.com/in/muhammad-iqbal-136062170/" target="blank_"><i class="fa fa-linkedin small"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Copyright © 2020 - Restaurant.me</p>
+    </footer>
+</body>
+
+</html>
