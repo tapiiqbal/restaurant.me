@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Author: Iqbal Muhammad,
+        Illustrator: Iqbal Muhammad, Category: Food, Price: $17.99,
+        Length: 784 pages">
     <title>Restaurant.me</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&family=Righteous&family=Roboto:ital,wght@1,300&family=Sarina&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -12,8 +15,9 @@
 <body>
     <div id="modal"></div>
     <header class="header">
+        <a href="#ourmenu" class="skip-link">Skip To Content</a>
         <div class="logo">
-            <img tabindex="0" src="./assets/images/logo/logo-resto-white.png" alt="logo-restaurant">
+            <img tabindex="0" src="./assets/images/logo/restaurant.me.png" style="width: 161px;" alt="logo-restaurant">
         </div>
         <a tabindex="0" id="menu" class="header__menu">☰</a>
 
@@ -21,7 +25,8 @@
             <ul class="nav__list">
                 <li class="nav__item"><a href="index.html">Home</a></li>
                 <li class="nav__item"><a href="#favorite">Favorite</a></li>
-                <li class="nav__item"><a href="#about">About Us</a></li>
+                <li class="nav__item"><a href="https://linkedin.com/in/muhammad-iqbal-136062170/" target="blank_">About Us</a></li>
+                <li class="nav__item"><a href="https://linkedin.com/in/muhammad-iqbal-136062170/" target="blank_">Sign Up</a></li>
             </ul>
         </nav>
     </header>
@@ -40,7 +45,7 @@
             <h1 tabindex="0" class="label-menu">OUR MENU</h1>
         </div>
         <div class="search-container text-center">
-            <input type="text" id="search-item" placeholder="Search.." name="search">
+            <input aria-label="input search" type="text" id="search-item" placeholder="Search.." name="search">
             <button type="submit" id="btn-search" aria-label="button search"><i class="fa fa-search"></i></button>
             <div id="text-enter"></div>
         </div>
@@ -50,8 +55,8 @@
             </div>
         </section>
         <section>
-            <div id="about">
-                <h1>About Us</h1>
+            <div id="contact">
+                <h1>Contact Us</h1>
                 <br/>
                 <img class="img-center" src="./assets/images/me.png" alt="me">
                 <h4 class="text-center">Email: iqbalmuhammad9321@gmail.com</h4>

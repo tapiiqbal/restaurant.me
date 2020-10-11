@@ -8,7 +8,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
 }
 
@@ -54,8 +54,11 @@ article-list {
 }
 
 img.article-item__thumbnail {
-    max-width: 100%;
+    /* Sebaiknya gunakan properti width daripada max-width agar gambar yang ditampilkan memiliki ukuran yang sama. 
+    max-width: 100%; */
+    width: 100%;
     height: 280px;
+    object-fit: cover;
 }
 
 .article-name {
@@ -77,16 +80,15 @@ img.article-item__thumbnail {
     display: grid;
     align-items: center;
     min-height: 380px;
-    /* width: 100%; */
     text-align: left;
     background-image: url("../images/heros/hero-image_3.jpg");
     background-position: center;
-    /* margin-bottom: 50px; */
     max-width: 100%;
+    background-size: contain;
 }
 
 .page-header-text {
-    padding-left: 22px;
+    padding-left: 85px;
     text-align: left;
     color: #fff;
     max-width: 100%;
@@ -96,7 +98,7 @@ img.article-item__thumbnail {
 
 .page-header-text h1 {
     padding: 10px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 38px;
@@ -104,7 +106,7 @@ img.article-item__thumbnail {
 }
 
 .page-header-text p.large {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 100px;
     font-style: normal;
@@ -113,7 +115,7 @@ img.article-item__thumbnail {
 }
 
 .page-header-text p.text-color {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 28px;
@@ -139,16 +141,16 @@ img.article-item__thumbnail {
     padding-bottom: 1px;
 }
 
-div#about {
+div#contact {
     padding-bottom: 50px;
 }
 
-div#about h1 {
+div#contact h1 {
     text-align: center;
     font-family: 'Sarina', cursive;
 }
 
-div#about img {
+div#contact img {
     max-width: 100%;
     height: 280px;
 }
@@ -167,7 +169,6 @@ div#about img {
 
 .search-container input,
 .search-container button i.fa {
-    /* border: solid black; */
     padding: 5px;
     border-radius: 5px;
 }
@@ -176,22 +177,27 @@ div#about img {
     article-list {
         grid-template-columns: 1fr !important;
     }
+
     .page-header-text {
         padding-left: 13px !important;
         margin-bottom: 5px;
     }
+
     .page-header-text h1 {
         font-size: 17.5px;
     }
+
     .page-header-text p.large {
         font-size: 50px;
         line-height: 15.2px;
     }
+
     .page-header-text p.text-color {
         font-size: 14px;
         line-height: 56.9px;
         margin-bottom: 0px;
     }
+
     img.article-item__thumbnail {
         height: auto;
     }
@@ -201,6 +207,7 @@ div#about img {
     article-list {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .page-header-text {
         padding-left: 50px;
     }

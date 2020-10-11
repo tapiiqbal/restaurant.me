@@ -1,115 +1,123 @@
-.header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #000;
-}
-
-.nav {
-    padding: 14px;
-}
-
-.header .logo {
-    padding-left: 100px;
-}
-
-.header .nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 100%;
-}
-
-.header .nav ul li a {
-    display: inline-block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.nav__item {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 24%;
-    text-align: center;
-    line-height: 24px;
-    text-transform: uppercase;
-    font-family: 'Righteous', cursive;
-}
-
-.header__menu {
-    font-size: 32px;
-    margin: 10px auto;
-    display: block;
-    width: 30px;
-    position: absolute;
-    left: 0;
-    padding-left: 10px;
-    color: #fff;
-}
-
-@media screen and (max-width: 499px) {
-    .nav {
-        z-index: 10;
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         background-color: #000;
-        width: 230px;
-        height: 100%;
-        position: fixed;
-        /* This trasform moves the drawer off canvas. */
-        -webkit-transform: translate(-300px, 0);
-        transform: translate(-300px, 0);
-        /* Optionally, we animate the drawer. */
-        transition: transform 0.3s ease;
     }
-    .open {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
+
+    .nav {
+        padding: 14px;
     }
-    .nav__item {
-        display: block !important;
-        width: auto !important;
+
+    .header .logo {
+        padding-left: 100px;
     }
+
     .header .nav ul {
         list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: auto;
-        position: fixed;
-        background-color: #000;
-        left: 0;
-        top: 0;
+        overflow: hidden;
+        width: 100%;
+        text-align: right;
+        /* margin-left: 35%; */
+        padding-right: 60px;
     }
+
     .header .nav ul li a {
-        display: block !important;
+        display: inline-block;
         color: #fff;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
     }
+
     .nav__item {
         box-sizing: border-box;
         display: inline-block;
-        width: 24%;
+        /* width: 15%; */
         text-align: center;
         line-height: 24px;
         text-transform: uppercase;
         font-family: 'Righteous', cursive;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .header .logo {
-        padding-left: 60% !important;
-    }
-}
 
-@media screen and (min-width: 500px) {
     .header__menu {
-        display: none;
+        font-size: 32px;
+        margin: 10px auto;
+        display: block;
+        width: 44px;
+        position: absolute;
+        left: 0;
+        padding-left: 10px;
+        color: #fff;
     }
-}
 
-@media screen and (max-width: 1024px) {
-    .header .logo {
-        padding-left: 50px;
+    @media screen and (max-width: 499px) {
+        .nav {
+            z-index: 10;
+            background-color: #000;
+            width: 230px;
+            height: 100%;
+            position: fixed;
+            -webkit-transform: translate(-300px, 0);
+            transform: translate(-300px, 0);
+            transition: transform 0.3s ease;
+        }
+
+        .open {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+
+        .nav__item {
+            display: block !important;
+            width: auto !important;
+        }
+
+        .header .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            position: fixed;
+            background-color: #000;
+            left: 0;
+            top: 0;
+        }
+
+        .header .nav ul li a {
+            display: block !important;
+            color: #fff;
+        }
+
+        .nav__item {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 24%;
+            text-align: center;
+            line-height: 24px;
+            text-transform: uppercase;
+            font-family: 'Righteous', cursive;
+        }
+
+        .header .logo {
+            padding-left: 60% !important;
+        }
     }
-    .nav {
-        padding: 0px !important;
-        padding-top: 0px;
+
+    @media screen and (min-width: 500px) {
+        .header__menu {
+            display: none;
+        }
     }
-}
+
+    @media screen and (max-width: 1024px) {
+        .header .logo {
+            padding-left: 50px;
+        }
+
+        .nav {
+            padding: 0px !important;
+            padding-top: 0px;
+        }
+    }

@@ -21,7 +21,7 @@ inputSearch.addEventListener("keyup", async(e) => {
     enterElement.innerHTML = `<p><i class="fa fa-exclamation-triangle"></i> Please enter or click button search</p>`
     if (e.keyCode === 13) {
         e.preventDefault();
-        if (inputSearch.value == "") {
+        if (inputSearch.value === "") {
             return
         } else {
             const dtSearch = await Helper.filterSearch(inputSearch.value)
@@ -39,7 +39,7 @@ inputSearch.addEventListener("keyup", async(e) => {
 })
 
 btnSearch.addEventListener("click", async _ => {
-    if (inputSearch.value == "") {
+    if (inputSearch.value === "") {
         return
     } else {
         const dtSearch = await Helper.filterSearch(inputSearch.value);
